@@ -135,15 +135,11 @@ form {
 
 form i {
     display: flex !important;
-    /*align-items: center;
-    text-align: center;*/
-    align-self: center;
     justify-content: center;
     background-color: gainsboro;
     border-radius: 10px 0px 0px 10px;
-    height:0;
     width:3%;
-    padding-top: 0.6%;
+    padding-top: 13px;
 }
 
 form button {
@@ -167,28 +163,30 @@ form button {
 }
 
 .filtres-sections {
-    width:70%;
+    width:100%;
     display: flex;
     flex-flow: row wrap;
-    justify-content: center;
 }
 
 @media all and (max-width: 568px) {
     .filtres-sections {
         flex-flow: column wrap;
     }
+    
+    
 }
 
 #filtre {
-    width: auto;
+    width: fit-content;
+    width: -moz-fit-content;
     height: 37px;
     border: 1px solid gainsboro;
     border-radius: 30px / 30px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
     margin-left: 3%;
     padding-right: 2%;
+    margin-bottom: 10px
 }
 
 #filtre i {
@@ -212,8 +210,9 @@ form button {
 }
 
 #filtre > span {
-    padding-left: 5%;
+   padding-left: 8px;
     font-weight: bold;
+    padding-right: 10px;
 }
 
 #info {
@@ -654,3 +653,28 @@ footer a {
             padding-top: 0.6%;
         }
 
+   /*Filtres*/
+        .filtres-sections {
+            width:100%;
+        }
+    
+        #filtres {
+            padding-top: 2%;
+            padding-bottom: 2%;
+            display: flex;
+            align-items: baseline;
+}
+    
+   /* Activités*/ 
+        .row-marseille {
+            width: 100%;
+            height: 400px;
+            margin-top: 2%;
+            margin-bottom: 5%;
+        }
+
+
+        .column-marseille > article:last-child {
+            width:100%;
+            height: 40%;
+        }
