@@ -554,22 +554,51 @@ footer a {
 
 @media all and (max-width: 1105px) {
     
+    /*Recherche*/
+          form > i {
+            height:25%;
+            width:4.5%;
+            padding-top: 1.5%;
+        }
+    
+            #site-search {
+                width:40%;
+        }
+            form button {
+                width:15%;
+    }
+    
     /*Filtres*/
         .filtres-sections {
             width:80%;
         }
 
+    /* Activités*/ 
+        .row-marseille {
+            width: 102%;
+            height: 500px;
+            margin-top: 2%;
+            margin-bottom: 5%;
+        }
+
+
+        .column-marseille > article:first-child {
+            width:100%;
+            height: 53%;
+        }
+    
 }
 
 @media all and (max-width: 1092px) {
  
+     /* MAIN */
+        main {
+            padding-left: 3%;
+            padding-right:6%;
+        }
+    
     /*Recherche*/
         form > i {
-        /*display: flex !important;
-        align-self: center;
-        justify-content: center;
-        background-color: gainsboro;
-        border-radius: 10px 0px 0px 10px;*/
             height:auto;
             width:5%;
         }
@@ -591,6 +620,7 @@ footer a {
             justify-content: space-evenly;
             justify-items: center;
             line-height: 1.2em;
+            margin-top: 2%;
     
         }
   
@@ -646,6 +676,12 @@ footer a {
 
 @media all and (max-width: 826px) {
  
+    /* MAIN */
+        main {
+            padding-left: 3%;
+            padding-right:6%;
+        }
+    
     /*Recherche*/
           form > i {
             height:36%;
@@ -681,7 +717,7 @@ footer a {
     
    /* Activités*/ 
         .row-marseille {
-            width: 100%;
+            width: 105%;
             height: 350px;
             margin-top: 2%;
             margin-bottom: 5%;
@@ -696,15 +732,33 @@ footer a {
     
 @media all and (max-width: 748px) {
  
+    /* MAIN */
+        main {
+            padding-left: 3%;
+            padding-right:6%;
+        }
+    
     /*Recherche*/
           form > i {
             height:40%;
+        }
+    
+   /* Activités*/ 
+        .row-marseille {
+            width: 105%;
+            margin-top: 3%;
         }
 }
     
     
 @media all and (max-width: 692px) {
  
+    /* MAIN */
+        main {
+            padding-left: 3%;
+            padding-right:6%;
+        }
+    
     /*Recherche*/
           form > i {
             height:45%;
@@ -712,15 +766,80 @@ footer a {
     
     /* Activités*/ 
         .row-marseille {
-            width: 100%;
+            width: 105%;
             height: 300px;
-            margin-top: 2%;
+            margin-top: 5%;
             margin-bottom: 5%;
         }
 
 
         .column-marseille > article:last-child {
-            width:100%;
-            height: 40%;
+            height: 42%;
         }
+}
+    
+    
+@media all and (max-width: 375px) {
+ 
+    /* MAIN */
+        main {
+            padding-left: 4%;
+            padding-right:7%;
+        }
+
+    /* Header */   
+        header > nav > img {
+            width: 30%;
+        }
+    
+        header > nav > a:last-child {
+            font-weight: bold;
+        }
+    
+        header > nav {
+            position:relative;
+            display: flex;
+            align-self: center;
+            justify-content: space-between;
+        }
+
+        header > nav > ul {
+            padding:0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            transform: translateX(-90px);
+            width: 30%;
+            align-self: center;
+        }
+
+        header > nav > ul > li {
+            width: 60%;
+            text-align: center;
+            padding: 2%;
+        }
+    
+    /*Recherche*/
+          form > i {
+            height:55%;
+            width:15%;
+            padding-top: 4%;
+        }
+    
+            #site-search {
+                width:100%;
+                margin-right:-3%;
+        }
+            form button {
+                width:13%;
+                border-radius: 15px 15px 15px 15px;
+    }
+    
+    
+    /* Sections*/
+            #sections {
+                margin-top: 20%;
+    
+            }
+    
 }
