@@ -838,8 +838,80 @@ footer a {
     
     /* Sections*/
             #sections {
-                margin-top: 20%;
+                margin-top: 40%;
     
             }
+
+    /* Section POPULAIRES */
+            #most-popular {
+                width: 100%;
+                border-radius: 0px;
+                background-color: gainsboro;
+            }
     
+    /* Section HEBERGEMENTS */
+            section.hebergements {
+                width: 100%;
+                height: 100%;
+                background-color: white;
+            }
+
+            section.hebergements > h3 {
+                padding-top: 7%;
+                padding-bottom: 6%;
+            }
+    
+             #hebergements-columns {
+                 width: 100%;
+                 display: flex;
+                 flex-direction: column;
+            }
+    
+            .marseille {
+                width: 100%;
+                height:auto;
+                /*box-shadow: 5px 3px 3px black;*/
+                filter: drop-shadow(0 0 0.45rem gainsboro);
+                padding: 1.5%;
+                margin-bottom: 5%;
+            }
+    
+            .marseille > p {
+                font-size: 14px;
+            }
+    
+            .marseille > h5 {
+                font-size: 16px;
+            }
+    
+            .marseille img  {
+                height:120px;
+                background-position: center bottom;
+            }
+    
+    
+    /* Section ACTIVTES */
+    
+            #marseille-activites {
+                padding-top: 7%;
+                margin-top: 170%;
+                min-height: 1800px;
+            }
+    
+            .act-marseille {
+                margin-bottom: 7%;
+            }
+    
+            .row-marseille {
+                width: 100%;
+                height: 600px;
+                flex-direction: column;
+                margin-top: 2%;
+                margin-bottom: 5%;
+            }
+    
+            /*.column-marseille {
+                width: 100%;
+                margin-right: 2%;
+            }*/
 }
