@@ -895,7 +895,7 @@ footer a {
             #marseille-activites {
                 padding-top: 7%;
                 margin-top: 170%;
-                min-height: 1800px;
+                min-height: 1400px;
             }
     
             .act-marseille {
@@ -914,4 +914,27 @@ footer a {
                 width: 100%;
                 margin-right: 2%;
             }*/
+
+    footer {
+    height:auto;
+    flex-direction: column;
 }
+
+.footer-content {
+    width:100%;
+    padding-left: 5%;
+}
+
+.footer-content > nav > ul {
+    padding-left: 0px;
+}
+
+.footer-content > h4 {
+    padding-top: 7%;
+    padding-bottom: 2%;
+}
+    
+    
+    
+    
+    }
