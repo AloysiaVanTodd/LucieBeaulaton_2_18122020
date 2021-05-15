@@ -790,10 +790,15 @@ footer a {
     /* Header */   
         header > nav > img {
             width: 30%;
+            height:50px;
         }
     
         header > nav > a:last-child {
             font-weight: bold;
+            height: 10px;
+            width: 40%;
+            text-align: end;
+            margin-top: -60px;
         }
     
         header > nav {
@@ -809,7 +814,7 @@ footer a {
             display: flex;
             justify-content: center;
             transform: translateX(-90px);
-            width: 30%;
+            width: 100%;
             align-self: center;
         }
 
@@ -817,6 +822,7 @@ footer a {
             width: 60%;
             text-align: center;
             padding: 2%;
+            margin-top: 100px;
         }
     
     /*Recherche*/
@@ -833,6 +839,8 @@ footer a {
             form button {
                 width:13%;
                 border-radius: 15px 15px 15px 15px;
+                /*ligne CSS icône CTA
+                background: transparent url(icon32.png) no-repeat 0px 0px / 16px 16px;*/
     }
     
     
