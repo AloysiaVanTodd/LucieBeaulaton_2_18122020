@@ -41,9 +41,6 @@ header > nav > img {
 }
 
 header > nav {
-    /*display: flex;
-    justify-content: space-between;
-    margin: 2relative20px 40px;*/
     position:relative;
     display: flex;
     align-self: center;
@@ -66,12 +63,13 @@ header > nav > ul > li {
     padding: 2%;
 }
 
-header nav > a {
+/*
+header > nav > a {
     position: absolute;
     align-self: center;
     right: 10px;
 }
-
+*/
 
 ul {
     list-style-type:none;
@@ -779,26 +777,27 @@ footer a {
 }
     
     
-@media all and (max-width: 375px) {
+@media all and (max-width: 600px) {
  
     /* MAIN */
         main {
-            padding-left: 4%;
-            padding-right:7%;
+            /*padding-left: 4%;
+            padding-right:7%;*/
         }
 
     /* Header */   
         header > nav > img {
             width: 30%;
-            height:50px;
+            height:40px;
+            margin-top: 3%;
         }
     
         header > nav > a:last-child {
             font-weight: bold;
             height: 10px;
             width: 40%;
-            text-align: end;
-            margin-top: -60px;
+            margin-top: 20px;
+            /*text-align: end;*/
         }
     
         header > nav {
@@ -809,13 +808,15 @@ footer a {
         }
 
         header > nav > ul {
-            padding:0;
-            margin: 0;
-            display: flex;
-            justify-content: center;
-            transform: translateX(-90px);
             width: 100%;
             align-self: center;
+            border-bottom: 3px gainsboro solid;
+            padding-bottom: 2%;
+            transform: translateX(0px);
+        }
+    
+           header > nav > ul > li > a:hover {
+            border-bottom-color: #0099CC;
         }
 
         header > nav > ul > li {
@@ -852,9 +853,10 @@ footer a {
 
     /* Section POPULAIRES */
             #most-popular {
-                width: 100%;
+                width: 100vw;
                 border-radius: 0px;
                 background-color: gainsboro;
+                margin-left: -4%;
             }
     
     /* Section HEBERGEMENTS */
