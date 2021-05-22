@@ -7,6 +7,7 @@ body {
     font-family: raleway;
     font-size: 16px;
     font-weight: normal;
+    width: 100;
     /*box-sizing: border-box;*/
 }
 
@@ -778,49 +779,48 @@ footer a {
  
     /* MAIN */
         main {
-            /*padding-left: 4%;
-            padding-right:7%;*/
+            padding-left: unset;
+            padding-right: unset;
         }
 
     /* Header */   
         header > nav > img {
             width: 30%;
             height:40px;
-            margin-top: 3%;
         }
     
         header > nav > a:last-child {
             font-weight: bold;
-            height: 10px;
-            width: 40%;
-            margin-top: 20px;
-            /*text-align: end;*/
+            position: absolute;
+            top: 20px;
+            right: 15px;
         }
     
         header > nav {
-            position:relative;
-            display: flex;
-            align-self: center;
-            justify-content: space-between;
+            width: 100%;
+            display: block;
         }
 
         header > nav > ul {
-            width: 100%;
-            align-self: center;
+           width: 100vw !important;
             border-bottom: 3px gainsboro solid;
             padding-bottom: 2%;
-            transform: translateX(0px);
-        }
+            transform: unset;
+            display: flex;
+            margin-right: -6%;
+            margin-left: -4%;
+            margin-top: 10px;
+                    }
     
            header > nav > ul > li > a:hover {
             border-bottom-color: #0099CC;
         }
 
         header > nav > ul > li {
-            width: 60%;
+            width: 50%;
             text-align: center;
             padding: 2%;
-            margin-top: 100px;
+            display: inline-block;
         }
     
     /*Recherche*/
@@ -852,19 +852,20 @@ footer a {
                 width: 100vw;
                 border-radius: 0px;
                 background-color: gainsboro;
-                margin-left: -4%;
-                padding-left: 4%;
-                padding-right: 4%;
+                margin-left: unset;
+                padding-left: unset;
+                padding-right: unset;
             }
     
             .popular {
-                width:100vw;
-                margin-bottom: 3%;
+               width: 85%;
+                margin: 10px auto;
             }
     
             .popular-title {
                 padding-top: 4%;
                 padding-bottom: 5%;
+                width: 90%;
             }
 }
     
