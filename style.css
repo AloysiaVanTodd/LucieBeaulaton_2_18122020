@@ -26,9 +26,6 @@ main {
 
 * {
     margin: 0;
-    /*padding-left: 10px;
-    padding-right:10px;
-    box-sizing: border-box;*/
 }
 
 a {
@@ -840,8 +837,7 @@ footer a {
             form button {
                 width:13%;
                 border-radius: 15px 15px 15px 15px;
-                /*ligne CSS icône CTA
-                background: transparent url(icon32.png) no-repeat 0px 0px / 16px 16px;*/
+                /*background: transparent url(search-solid.svg) no-repeat 0px 0px / 16px 16px;*/
     }
     
     
@@ -857,7 +853,20 @@ footer a {
                 border-radius: 0px;
                 background-color: gainsboro;
                 margin-left: -4%;
+                padding-left: 4%;
+                padding-right: 4%;
             }
+    
+            .popular {
+                width:100vw;
+                margin-bottom: 3%;
+            }
+    
+            .popular-title {
+                padding-top: 4%;
+                padding-bottom: 5%;
+            }
+}
     
     /* Section HEBERGEMENTS */
             section.hebergements {
@@ -903,20 +912,20 @@ footer a {
     /* Section ACTIVTES */
     
             #marseille-activites {
-                padding-top: 7%;
-                margin-top: 170%;
+                margin-top: 7%;
                 min-height: 1400px;
             }
     
             .act-marseille {
                 margin-bottom: 7%;
+                height: 230px;
             }
     
             .row-marseille {
                 width: 100%;
-                height: 600px;
+                height: 1500px;
                 flex-direction: column;
-                margin-top: 2%;
+                margin-top: 10%;
                 margin-bottom: 5%;
             }
     
@@ -924,25 +933,36 @@ footer a {
                 width: 100%;
                 margin-right: 2%;
             }*/
+    
+           .column-marseille > article:first-child {
+               height: 230px;
+               margin-bottom: 5%;
+            }
+    
+           .column-marseille > article:last-child {
+               height: 230px;
+            }    
+    
+     /* FOOTER */
 
-    footer {
-    height:auto;
-    flex-direction: column;
-}
+                footer {
+                    height:auto;
+                    flex-direction: column;
+                }
 
-.footer-content {
-    width:100%;
-    padding-left: 5%;
-}
+                .footer-content {
+                    width:100%;
+                    padding-left: 5%;
+                }
 
-.footer-content > nav > ul {
-    padding-left: 0px;
-}
+                .footer-content > nav > ul {
+                    padding-left: 0px;
+                }
 
-.footer-content > h4 {
-    padding-top: 7%;
-    padding-bottom: 2%;
-}
+                .footer-content > h4 {
+                    padding-top: 7%;
+                    padding-bottom: 2%;
+                }
     
     
     
