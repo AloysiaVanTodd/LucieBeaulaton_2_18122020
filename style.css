@@ -122,7 +122,7 @@ form {
     justify-items: center;
 }
 
-form i {
+form > i {
     display: flex !important;
     justify-content: center;
     background-color: #F2F2F2;
@@ -143,6 +143,10 @@ form button {
     margin:0;
 }
 
+
+.btn-i {
+    display: none;
+}
 
 #filtres {
     padding-top: 2%;
@@ -354,15 +358,22 @@ section.hebergements {
     margin-bottom: 4%;
 }
 
-.marseille h5,p {
+.marseille > h5,p {
     line-height: 1.6em;
 }
 
-.marseille img  {
+.marseille  img  {
+    width:100%;
     border-radius: 20px 20px 0 0;
     height:150px;
     object-fit: cover;
 }
+
+
+.marseille > a {
+    color: black;
+    }
+
 
 .marseille .fa-star {
     color: #0065FC;
@@ -831,6 +842,14 @@ footer a {
                 width:13%;
                 border-radius: 15px 15px 15px 15px;
                 /*background: transparent url(search-solid.svg) no-repeat 0px 0px / 16px 16px;*/
+    }
+    
+    .btn-i {
+        display: block;
+    }
+    
+    .btn-s {
+        display: none;
     }
     
     
