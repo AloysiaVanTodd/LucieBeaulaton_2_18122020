@@ -66,10 +66,10 @@ header > nav > ul > li {
 }
 
 header > nav > ul > li > a {
-            color: black;
+    color: black;
 }
 
-    header > nav > ul > li > a:hover {
+header > nav > ul > li > a:hover {
     border-top: 2px #0065FC solid;
     padding-top: 30%;
     color: #0065FC;
@@ -180,7 +180,27 @@ form button {
     margin-left: 3%;
     padding-right: 2%;
     margin-bottom: 10px
+    transition: background-size 1s 0s;
+    background: linear-gradient(to right, #eee, #eee);
+    background-repeat: no-repeat;
+    background-size: 0 100%;
 }
+
+#filtre:hover {
+    background-color: #0065FC;
+    background-size: 100% 100%;
+}
+
+#filtre  {
+    /*background: linear-gradient(to right, #eee, #eee);
+    background-repeat: no-repeat;
+    background-size: 0 100%;*/
+
+}
+
+
+
+*/
 
 #filtre i {
     background-color: aliceblue;
@@ -203,7 +223,7 @@ form button {
 }
 
 #filtre > span {
-   padding-left: 8px;
+    padding-left: 8px;
     font-weight: bold;
     padding-right: 10px;
 }
@@ -228,6 +248,7 @@ form button {
     -moz-border-radius: 12px / 24px; */
     border-radius: 30px / 30px; 
 }
+
 #info > p {
     padding-left: 2%; 
 }
@@ -257,10 +278,6 @@ form button {
     padding-bottom: 2%;
 }
 
-.popular-content {
-    padding-left: 10px;
-}
-
 .popular {
     background-color: white;
     border-radius: 20px;
@@ -279,15 +296,23 @@ form button {
     margin: 0;
 }
 
+.popular-content {
+    padding-left: 10px;
+}
+
 .popular > p {
     line-height: 1.4em;
 }
 
 .popular > img  {
-    width: 40%;
+    max-width: 40%;
     border-radius: 20px 0 0 20px;
     height:150px;
     object-fit: cover;
+}
+
+.popular > img:last-child  {
+    /*min-width: 100%;*/
 }
 
 .popular .fa-star {
@@ -304,6 +329,10 @@ form button {
     margin-top: 4em;
 }
 
+.popular:first-child .fa-star:last-child {
+    color: #0065FC;
+}
+
 section.hebergements > h3 {
     padding-bottom: 2%;
 }
@@ -318,7 +347,7 @@ section.hebergements {
     background-color: #F2F2F2;
     padding: 3%;
     margin-right: 2%;
-    }
+}
 
 #hebergements-columns {
     width: 100%;
@@ -380,6 +409,10 @@ section.hebergements {
     padding: .1em;
 }
 
+.marseille:first-child .fa-star:last-child {
+    color: #F2F2F2;
+}     
+
 #marseille-activites {
     display: flex;
     flex-direction: column;
@@ -395,7 +428,7 @@ section.hebergements {
     height: 100%;
     background-color: white;
     border-radius: 30px 30px 30px 30px;
-    box-shadow: 10px 5px 5px gainsboro;
+    box-shadow: 10px 5px 5px #F2F2F2;
     display: flex;
     flex-direction: column;
     margin-right: 2%;
@@ -441,56 +474,6 @@ section.hebergements {
     width:100%;
     height: 40%;
 }
-
-
-
-/*.act-marseille1 img  {
-    width: 90%;
-    max-width: 350px;
-    height: auto;
-}
-
-.act-marseille2 img  {
-    width: 60%;
-    max-width: 350px;
-    height: auto;
-}
-
-.act-marseille3 img  {
-    width: 90%;
-    max-width: 350px;
-    height: auto;
-}
-
-.act-marseille4 img  {
-    width: 60%;
-    max-width: 350px;
-    height: auto;
-}
-
-.act-marseille4 {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-}
-
-.act-marseille3 {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-}
-
-.act-marseille2{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-}
-
-.act-marseille1 {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-}*/
 
 footer {
     background-color: #F2F2F2;
