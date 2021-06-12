@@ -179,7 +179,7 @@ form button {
     align-items: center;
     margin-left: 3%;
     padding-right: 2%;
-    margin-bottom: 10px
+    margin-bottom: 10px;
     transition: background-size 1s 0s;
     background: linear-gradient(to right, #eee, #eee);
     background-repeat: no-repeat;
@@ -190,17 +190,14 @@ form button {
     background-color: #0065FC;
     background-size: 100% 100%;
 }
-
+/*
 #filtre  {
-    /*background: linear-gradient(to right, #eee, #eee);
+    background: linear-gradient(to right, #eee, #eee);
     background-repeat: no-repeat;
-    background-size: 0 100%;*/
+    background-size: 0 100%;
 
-}
+}*/
 
-
-
-*/
 
 #filtre i {
     background-color: aliceblue;
@@ -311,9 +308,9 @@ form button {
     object-fit: cover;
 }
 
-.popular > img:last-child  {
-    /*min-width: 100%;*/
-}
+/*.popular > img:last-child  {
+    min-width: 100%;
+}*/
 
 .popular .fa-star {
     color: #0065FC;
@@ -362,7 +359,7 @@ section.hebergements {
     display: grid;
     grid-template-columns: repeat(auto-fill,minmax(160px, 1fr));*/
     }
-}
+
 
 #hebergements-columns > article {
     display: flex;
