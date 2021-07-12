@@ -56,26 +56,29 @@ header > nav > ul {
     display: flex;
     justify-content: center;
     transform: translateX(-90px);
-    width: 30%;
+    width: 40%;
     align-self: center;
 }
 
 header > nav > ul > li {
-    width: 50%;
+    width: 40%;
     text-align: center;
 }
 
-header > nav > ul > li:hover {
+.nav-border {
+    color: black;
+    height:60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-border:hover {
     border-top: 2px #0065FC solid;
 }
 
-header > nav > ul > li > a {
-    color: black;
-}
-
-header > nav > ul > li > a:hover {
+.nav-border:hover > a {
     color: #0065FC;
-    padding-top: 10px;
 }
 
 .inscription {
@@ -133,17 +136,20 @@ form > i {
     padding-top: 13px;
 }
 
-form button {
+.btn-s {
     background-color: #0065FC;
     color: white;
     border-radius: 0px 10px 10px 0px;
     border-style: none;
     height:100%;
-    width:10%;
+    width:20%;
     margin:0;
     cursor:pointer;
 }
 
+.btn-s:hover {
+    font-weight: bolder;
+}
 
 .btn-i {
     display: none;
@@ -330,11 +336,11 @@ form button {
     color: #0065FC;
 }
 
-section.hebergements > h3 {
+#hebergements > h3 {
     padding-bottom: 2%;
 }
 
-section.hebergements {
+#hebergements {
     width: 68%;
     /*height: 600px;*/
     height: 100%;
@@ -738,7 +744,7 @@ footer a {
         }
 
     /* Section HEBERGEMENTS*/ 
-        section.hebergements {
+        #hebergements {
             width: 98%;
         }
     
@@ -766,6 +772,10 @@ footer a {
         }
 
     /*HEADER*/
+
+        header > nav {
+            height:50px;
+        }
 
         header > nav > ul {
             padding-top: 4vw;
@@ -820,11 +830,11 @@ footer a {
             margin-top: 4%;
         }
         
-        section.hebergements {
+        #hebergements {
             margin-left: 0vw;
         }
 
-        .hebergements > h3 {
+        #hebergements > h3 {
             padding-top: 2%;
         }
 
@@ -911,11 +921,6 @@ footer a {
     
    /* Activités*/ 
 
-
-        /*.popular .fa-star {
-            margin-top: 8vw;
-        }*/
-
        .marseille-activites {
             margin-left: 2%;
             margin-right: 4%;
@@ -936,10 +941,6 @@ footer a {
         }
     
     /*Header*/
-
-        /*header > nav > img {
-            width: 15%;
-        }*/
 
         #head {
             margin-top: 10vw;
@@ -987,14 +988,25 @@ footer a {
         }
 
     /* Header */   
+
+        .nav-border {
+            color: black;
+            height: unset;
+            display: unset;
+        }
+        
+        .nav-border:hover {
+            border-top: unset;
+        }
+        
+        .nav-border:hover > a {
+            color: #0065FC;
+        }
+    
         header > nav > img {
             width: 20%;
             height:auto;
             padding-left: 20px;
-        }
-    
-        header > nav > ul > li:hover {
-            border-top: unset;
         }
 
         .inscription {
@@ -1018,11 +1030,6 @@ footer a {
             padding-bottom: 2%;
             transform: unset;
             display: flex;
-        }
-    
-        header > nav > ul > li > a:hover {
-            color: #0065FC;
-            border-top: none;
         }
 
         header > nav > ul > li:hover {
@@ -1098,7 +1105,8 @@ footer a {
 
     
     /* Section HEBERGEMENTS */
-            section.hebergements {
+            
+            #hebergements {
                 width: 85vw;
                 height: 100%;
                 background-color: white;
