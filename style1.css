@@ -61,8 +61,12 @@ header > nav > ul {
 }
 
 header > nav > ul > li {
-    width: 40%;
+    width: 50%;
     text-align: center;
+}
+
+header > nav > ul > li:hover {
+    border-top: 2px #0065FC solid;
 }
 
 header > nav > ul > li > a {
@@ -70,9 +74,8 @@ header > nav > ul > li > a {
 }
 
 header > nav > ul > li > a:hover {
-    border-top: 2px #0065FC solid;
-    padding-top: 60px;
     color: #0065FC;
+    padding-top: 10px;
 }
 
 .inscription {
@@ -237,6 +240,7 @@ form button {
     justify-content: space-evenly;
     justify-items: center;
     line-height: 1.2em;
+    padding-top:2vw;
     
 }
 
@@ -275,17 +279,25 @@ form button {
 .popular-title {
     display: flex;
     flex-flow: row nowrap;
-    justify-content: space-around;
+    justify-content: space-between;
     padding-bottom: 5%;
     margin: 0;
 }
 
 .popular-content {
+    /*display: flex;
+    flex-direction: column;*/
     padding-left: 10px;
 }
 
 .popular-content > h4 {
     width: 90%;
+}
+
+.notes {
+    display: flex;
+    flex-direction: row nowrap;
+    align-items: flex-end;
 }
 
 .popular > p {
@@ -299,11 +311,15 @@ form button {
     object-fit: cover;
 }
 
+/*.popular:last-child > img  {
+    width:8vw;
+}*/
+
 .popular .fa-star {
     color: #0065FC;
     margin: 0;
     padding: .1em;
-    margin-top: 60px;
+    margin-top: 3vw;
 }
 
 .popular .fa-star:last-child {
@@ -409,7 +425,7 @@ section.hebergements {
     flex-direction: column;
     /*flex-flow: row wrap;*/
     height: auto;
-    width: 100vw;
+    width: 100%;
     border-radius: 20px;
     padding-top: 4%;
 }
@@ -426,7 +442,6 @@ section.hebergements {
 
 .act-marseille:hover {
     transform: scale(1.1);
-	/*box-shadow: 0 0 65px #0065FC inset, 0 0 20px #0065FC inset, 0 0 15px #0065FC;*/
     cursor: pointer;
 }
 
@@ -444,16 +459,6 @@ section.hebergements {
     object-fit: cover;
 }
 
-/*.act-marseille-medium {
-    width:100%;
-    height: 50%;
-}
-
-.act-marseille-small {
-    width:100%;
-    height: 40%;
-}*/
-
 .row-marseille {
     width: 100%;
     height: 540px;
@@ -466,7 +471,6 @@ section.hebergements {
 
 .row-marseille > article:hover {
     transform: scale(1.1);
-	/*box-shadow: 0 0 20px gainsboro inset, 0 0 20px gainsboro inset, 0 0 10px gainsboro;*/
     cursor:pointer;
 }
 
@@ -517,7 +521,8 @@ footer {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    padding: 2%;
+    padding-top: 2%;
+    padding-left: 2%;
 }
 
 footer a {
@@ -543,6 +548,73 @@ footer a {
     padding-bottom: 5%;
 }
 
+@media all and (max-width: 2150px) {
+
+    .popular:last-child > img {
+        width: 8vw;
+    }
+}
+
+@media all and (max-width: 1960px) {
+
+    .popular:last-child > img {
+        width: 8.5vw;
+    }
+}
+
+@media all and (max-width: 1960px) {
+
+    .popular:last-child > img {
+        width: 9vw;
+    }
+}
+
+@media all and (max-width: 1772px) {
+
+    .popular:last-child > img {
+        width: 10vw;
+    }
+
+    .popular .fa-star {
+        margin-top: 2.5vw;
+    }
+}
+
+@media all and (max-width: 1736px) {
+
+    .popular .fa-star {
+        margin-top: 2vw;
+    }
+}
+
+@media all and (max-width: 1636px) {
+
+    .inscription {
+        margin-top: -5px;
+    }
+
+    .popular .fa-star {
+            margin-top: 1.5vw;
+        }
+}
+
+
+@media all and (max-width: 1528px) {
+
+    .inscription {
+        margin-top: -10px;
+    }
+
+    .popular .fa-star {
+            margin-top: 0vw;
+        }
+}
+
+@media all and (max-width: 1236px) {
+
+    .inscription {
+        margin-top: -15px;
+    }
 
 /* TABLETTE */
 
@@ -573,6 +645,7 @@ footer a {
             height: 500px;
             margin-top: 2%;
             margin-bottom: 5%;
+            padding-left: 2vw;
         }
 
 
@@ -590,6 +663,11 @@ footer a {
             padding-left: 3%;
             padding-right:6%;
         }
+    
+    /*Menu
+        .inscription {
+            padding-top: 10px;
+        }*/
     
     /*Recherche*/
         form > i {
@@ -646,11 +724,19 @@ footer a {
             width:30vw;
         }
 
+        .popular:last-child > img {
+            width: 30vw;
+        }
+
         .popular-content > .fa-star {
             padding: 1%;
             margin-top: 4%;
         }
-    
+
+        .popular .fa-star {
+            margin-top: 6vw;
+        }
+
     /* Section HEBERGEMENTS*/ 
         section.hebergements {
             width: 98%;
@@ -698,6 +784,10 @@ footer a {
         header > nav > ul > li > a:hover {
             padding-top: 40px;
         }
+
+        .inscription {
+            padding-top: 45px;
+        }
     
     /*Recherche*/
           form > i {
@@ -728,7 +818,6 @@ footer a {
     /* Sections*/
         #sections {
             margin-top: 4%;
-            margin-left: -3vw;
         }
         
         section.hebergements {
@@ -737,6 +826,10 @@ footer a {
 
         .hebergements > h3 {
             padding-top: 2%;
+        }
+
+        .popular .fa-star {
+            margin-top:8vw;
         }
 
         .popular:hover {
@@ -750,11 +843,10 @@ footer a {
    /* Activités*/ 
 
         .row-marseille {
-            width: 100vw;
+            width: 100%;
             height: 350px;
-            margin-top: 2%;
+            margin-top: 3%;
             margin-bottom: 5%;
-            margin-left: 5%;
         }
 
         #marseille-activites > h3 {
@@ -788,6 +880,12 @@ footer a {
 
         .footer-content {
             width: 100vw;
+            padding-left: 5%;
+        }
+
+        .footer-content > h4 {
+            padding-top: 4%;
+            padding-bottom: 1%;
         }
 
     }
@@ -800,6 +898,12 @@ footer a {
             padding-right:6%;
         }
     
+    /*Header*/
+
+        header > nav > img {
+            width:15%;
+    }
+
     /*Recherche*/
           form > i {
             height:40%;
@@ -807,19 +911,23 @@ footer a {
     
    /* Activités*/ 
 
+
+        /*.popular .fa-star {
+            margin-top: 8vw;
+        }*/
+
        .marseille-activites {
-            margin-left: 4%;
+            margin-left: 2%;
             margin-right: 4%;
         }
 
         .row-marseille {
-            width: 105%;
             margin-top: 3%;
         }
 }
     
     
-@media all and (max-width: 692px) {
+@media all and (max-width: 703px) {
  
     /* MAIN */
         main {
@@ -829,9 +937,9 @@ footer a {
     
     /*Header*/
 
-        header > nav > img {
+        /*header > nav > img {
             width: 15%;
-        }
+        }*/
 
         #head {
             margin-top: 10vw;
@@ -839,7 +947,7 @@ footer a {
         }
 
         .inscription {
-            padding-top: 4vw;
+            padding-top: 40px;
         }
 
         #filtres-nav {
@@ -855,7 +963,6 @@ footer a {
 
     /* Activités*/ 
         .row-marseille {
-            width: 105%;
             height: 300px;
             margin-top: 5%;
             margin-bottom: 5%;
@@ -863,6 +970,10 @@ footer a {
 
         .column-marseille > article:last-child {
             height: 42%;
+        }
+
+        .popular .fa-star {
+            margin-top:9vw;
         }
 }
     
@@ -882,6 +993,10 @@ footer a {
             padding-left: 20px;
         }
     
+        header > nav > ul > li:hover {
+            border-top: unset;
+        }
+
         .inscription {
             top: 0px;
             right: 40px;
@@ -999,7 +1114,6 @@ footer a {
             .marseille {
                 width: 100%;
                 height:auto;
-                /*box-shadow: 5px 3px 3px black;*/
                 filter: drop-shadow(0 0 0.45rem #F2F2F2);
                 padding: 1.5%;
                 margin-bottom: 5%;
@@ -1042,6 +1156,7 @@ footer a {
                 flex-direction: column;
                 margin-top: 10%;
                 margin-bottom: 5%;
+                margin-left: 2%;
             }
     
            .column-marseille-first > article:first-child {
@@ -1095,6 +1210,10 @@ footer a {
         .filtres-sections {
             flex-flow: column wrap;
         }
+
+        .popular .fa-star {
+            margin-top:10vw;
+        }
     }
 
     @media all and (max-width: 547px) {
@@ -1118,6 +1237,10 @@ footer a {
             margin-top: 40%;
         }
 
+        .popular .fa-star {
+            margin-top:11vw;
+        }
+
     }
 
     @media all and (max-width: 400px) {
@@ -1137,9 +1260,19 @@ footer a {
                 width:30vw;
             }
 
+            .popular .fa-star {
+                margin-top:16vw;
+            }
+
         }
 
         @media all and (max-width: 328px) {
+
+
+        /*Recherche*/
+            form > i {
+                padding-top: 5vw;
+           }
 
          /*Section Populaires*/
 
