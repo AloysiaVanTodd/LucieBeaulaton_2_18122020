@@ -8,7 +8,6 @@ body {
     font-size: 16px;
     font-weight: normal;
     width: 100;
-    /*box-sizing: border-box;*/
 }
 
 main {
@@ -19,7 +18,7 @@ main {
 
 @font-face {
   font-family: Raleway;
-  src: url("/fonts/Raleway-VariableFont_wght.ttf") format ("ttf");
+  src: url("/fonts/Raleway-VariableFont_wght.ttf") format("ttf");
   font-weight: normal;
 }
 
@@ -186,7 +185,6 @@ form > button {
     background-repeat: no-repeat;
     background-size: 0 100%;
     transition: color 1s 0s;
-    color-adjust: 0 100%;
 }
 
 .filtre:hover {
@@ -303,7 +301,7 @@ form > button {
 
 .notes {
     display: flex;
-    flex-direction: row nowrap;
+    flex-direction: row;
     align-items: flex-end;
 }
 
