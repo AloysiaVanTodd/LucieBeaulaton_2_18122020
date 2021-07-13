@@ -19,9 +19,7 @@ main {
 
 @font-face {
   font-family: Raleway;
-  src: local("Raleway"),
-       local("Raleway-VariableFont_wght"),
-       url(Raleway-VariableFont_wght.ttf);
+  src: url("/fonts/Raleway-VariableFont_wght.ttf") format ("ttf");
   font-weight: normal;
 }
 
@@ -139,7 +137,7 @@ form > i {
     padding-top: 13px;
 }
 
-.btn-s {
+form > button {
     background-color: #0065FC;
     color: white;
     border-radius: 0px 10px 10px 0px;
@@ -1006,6 +1004,10 @@ footer a {
             color: #0065FC;
         }
     
+        header > nav {
+            height:150px;
+        }
+
         header > nav > img {
             width: 20%;
             height:auto;
@@ -1261,6 +1263,15 @@ footer a {
                 padding-top: 4vw;
             }
  
+        /*Header*/
+            header > nav {
+                height:120px;
+            }
+
+            header > nav > ul {
+                padding-top: 6vw;
+            }
+
         /*Section Populaires*/
 
             #sections {
@@ -1292,3 +1303,4 @@ footer a {
             }
 
         }
+    }
