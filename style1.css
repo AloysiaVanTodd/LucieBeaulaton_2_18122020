@@ -18,8 +18,7 @@ main {
 
 @font-face {
   font-family: Raleway;
-  src: url("/fonts/Raleway-VariableFont_wght.ttf") format("ttf");
-  font-weight: normal;
+  src: url("/fonts/static/Raleway-Regular.ttf") format("ttf");
 }
 
 * {
@@ -277,7 +276,6 @@ form > button {
 
 .popular:hover {
     transform: scale(1.1);
-	/*box-shadow: 0 0 65px #0065FC inset, 0 0 20px #0065FC inset, 0 0 15px #0065FC;*/
     cursor: pointer;
 }
 
@@ -290,8 +288,6 @@ form > button {
 }
 
 .popular-content {
-    /*display: flex;
-    flex-direction: column;*/
     padding-left: 10px;
 }
 
