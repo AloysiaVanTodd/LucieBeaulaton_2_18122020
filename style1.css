@@ -170,7 +170,7 @@ form > button {
 }
     
 
-#filtre {
+.filtre {
     width: fit-content;
     width: -moz-fit-content;
     height: 37px;
@@ -189,14 +189,14 @@ form > button {
     color-adjust: 0 100%;
 }
 
-#filtre:hover {
+.filtre:hover {
     background-size: 100% 100%;
     color:#F2F2F2;
     cursor:pointer;
     /*color: #F2F2F2;*/
 }
 
-#filtre i {
+.filtre i {
     background-color: aliceblue;
     color: #0065FC;
     margin: 0;
@@ -212,7 +212,7 @@ form > button {
     left: -4px;
 }
 
-#filtre > span {
+.filtre > span {
     padding-left: 8px;
     font-weight: bold;
     padding-right: 10px;
@@ -819,7 +819,7 @@ footer a {
             width:100%;
         }
     
-        #filtres {
+        .filtres {
             padding-top: 4%;
             padding-bottom: 2%;
             display: flex;
